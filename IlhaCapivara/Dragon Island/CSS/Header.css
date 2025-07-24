@@ -1,0 +1,138 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #759E67;
+    border: 10px;
+    border-style: solid;
+    border-color: #4D58B8;
+    align-items: center;
+    max-height: 14%;
+    width: 99.2vw;
+    overflow: hidden;
+}
+
+.HeaderLogo {
+    Height: 10vw;
+    padding-right: 20px;
+    align-content: center;
+    max-height: 100%;
+}
+.HeaderLogo:hover {
+  background-blend-mode: lighten;
+}
+
+.HeaderSiteSelect {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #207FD3;
+    border: 8px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #0858B2;
+    height: 45%;
+    align-items: center;
+    overflow: hidden;
+    max-height: 10vw;
+}
+
+.HeaderSiteSelectLinks {
+    color: white;
+    font-size: 1.4vw;
+    font-family: "ACME_Secret_Agent_Bold";
+    
+}
+.HeaderSiteSelectLinks:hover {
+    color: #EF431D;
+    font-size: 1.4vw;
+    font-family: "ACME_Secret_Agent_Bold";
+    
+}
+
+.headerlinkmiddle {
+    color: #0858B2;
+    font-size: 1200%;
+    user-select: none;
+    width: 1px;
+}
+
+.HeaderLoginRegister {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    width: 20vw;
+    align-items: center;
+}
+
+.HeaderLogin {
+    background-image: url("../Images/LoginButtonBackground.jpg");
+    background-size: cover;
+    border: 1px;
+    border-radius: 400px;
+    width: 7vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7vw;
+    color: aliceblue;
+    font-family: "Action_Man_Italic";
+}
+.HeaderLogin:hover{
+    background-blend-mode: difference;
+    background-color: darkmagenta ;
+    color: #f17b60;
+}
+
+.HeaderCadastro {
+    width: 7vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+    color: aliceblue;
+    font-family: "Action_Man_Bold_Italic";
+}
+.HeaderCadastro:hover {
+    color: #EF431D;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "ACME_Explosive";
+  src: url("../ClubPenguinFonts/A.C.M.E.\ Explosive.ttf")
+}
+
+@font-face {
+  font-family: "ACME_Secret_Agent_Bold";
+  src: url("../ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf")
+}
+
+@font-face {
+  font-family: "Action_Man_Bold_Italic";
+  src: url("../ClubPenguinFonts/Action\ Man\ Bold\ Italic.ttf")
+}
+
+@font-face {
+  font-family: "Action_Man_Italic";
+  src: url("../ClubPenguinFonts/Action\ Man\ Italic.ttf")
+}
+
+@font-face {
+  font-family: "AgentCodeByroDr";
+  src: url("../ClubPenguinFonts/agentcodebyrodr.ttf")
+}
+
+@font-face {
+  font-family: "Bonk_Fatty";
+  src: url("../ClubPenguinFonts/Bonk\ Fatty.ttf")
+}
+
+@font-face {
+  font-family: "Fontasy_Penguin";
+  src: url("../ClubPenguinFonts/Fontasy\ Penguin.ttf")
+}

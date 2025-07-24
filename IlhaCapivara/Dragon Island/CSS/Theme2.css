@@ -1,0 +1,138 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #32FA49;
+    border: 10px;
+    border-style: solid;
+    border-color: green;
+    align-items: center;
+    max-height: 10%;
+}
+
+.HeaderLogo {
+    Height: 10vw;
+    padding-right: 20px;
+    align-content: center;
+    max-height: 100%;
+}
+
+.HeaderSiteSelect {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #32FAD1;
+    border: 1px;
+    border-radius: 30px;
+    border-style: hidden;
+    height: 80%;
+    align-items: center;
+}
+
+.HeaderSiteSelectLinks {
+    color: red;
+    font-size: 2.4vw;
+}
+
+.HeaderLoginRegister {
+    display: flex;
+    justify-content: space-between;
+    padding: 0, 6%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Site {
+    background-color:#4256f4;
+    border: 10px;
+    border-style: solid;
+    border-color: blue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    max-height: 90vw;
+}
+.CadastroSite {
+    display: flex;
+    padding-top: 3vw;
+}
+
+.CadastroImg {
+    height: 25vw;
+    padding-left: 3vw;
+}
+
+.CadastroFormDiv {
+    padding-left: 10%;
+    width: 55vw;
+}
+
+@keyframes PostItAnim{
+    to {
+        border-radius:0 0 10vw/16vw 0;
+    }
+}
+@keyframes PostItAnimTab {
+    to {
+        top: 9vw;
+        left: 7vw;
+        transform: rotate(-10deg);
+    }
+}
+.CadastroStickerSenhaPostItF {
+    height: 16vw;
+    width: 16vw;
+    background-color: #E0DE3D;
+    border-radius:0 0 5vw/7vw 0;
+    overflow: hidden;
+}
+.CadastroStickerSenhaPostItT {
+    background-color: #4E4D15;
+    height: 10vw;
+    width: 10vw;
+    position: relative;
+    top: 12vw;
+    left: 11vw;
+    z-index: 2;
+}
+.CadastroStickerSenhaPostItF:hover {
+    animation-name: PostItAnim;
+    animation-duration: 1.3s;
+}
+.CadastroStickerSenhaPostItF:hover > .CadastroStickerSenhaPostItT {
+    animation-name: PostItAnimTab;
+    animation-duration: 1.3s;
+}
+
+.CadastroStickerSenha {
+    position: relative;
+    left: 15vw;
+    bottom: 7vw;
+    transform: rotate(-26deg);
+}
+
+.CadastroStickerSenhaText {
+    position: relative;
+    bottom: 14.3vw;
+    font-size: 166%;
+    font-family: 'Comic Sans MS';
+    left: 2.7vw;
+    line-height:2.5vw;
+    user-select: none;
+}
+
+.CadastroLabel {
+    font-size: 116%;
+    font-family: 'Comic Sans MS';
+}
+
+.CadastroTextInput {
+    padding: 4px;
+    width: 15vw;
+    resize: none;
+}
