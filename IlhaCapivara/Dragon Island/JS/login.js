@@ -1,6 +1,8 @@
 let questiontxt1 = document.getElementById("loginquestionOne")
 let questionTxt1Label = document.getElementById("loginquestLabel")
 let questionbtt1 = document.getElementById("logQuestOneCalcButton")
+var calculatorButt = document.getElementsByClassName("calcButt")
+var calcScreen = document.getElementById("calcTela")
 
 questionbtt1.addEventListener('click', questTaskAge);
 questiontxt1.addEventListener("keypress", function(event) {
@@ -36,4 +38,33 @@ function questTaskAge() {
     var expectedDaysLeft = expectedfulldays - daysBirthToDayDayTotal
 
     alert("Você já viveu aproximadamente "+daysBirthToDayDayTotal+" dias! Parabéns! Ah, aliás, se você viver até os 90 anos só te faltam "+expectedDaysLeft+" dias até...")
+}
+
+questiontxt1.onfocus = changeColour;
+
+function changeColour() {
+    questionTxt1Label.style.color = "green"
+    questionTxt1Label.style.backgroundColor = "magenta"
+    questiontxt1.style.backgroundColor = "red"
+    questiontxt1.style.color = "white"
+    questionbtt1.style.backgroundColor = "blue"
+    questionbtt1.style.color = "yellow"
+}
+
+calculatorButt.addEventListener('click', calculator)
+
+function calculator() {
+    alert("teste")
+    if (calcScreen.innerHTML === "Calculator") {
+        calcScreen.innerHTML = ""
+        preventDefault();
+    }
+    preventDefault();
+    var calcInp = calculatorButt.value
+    var currentCalc = calcScreen.innerHTML
+    if (calcInp != "=") {
+        preventDefault();
+        currentCalc = calcScreen + calcInp;
+        calcScreen.innerHTML = currentCalc
+    }
 }
