@@ -1,0 +1,28 @@
+{
+    "tabCNPJ": {
+        "linha1": {
+            "id": "1",
+            "cnpj": "1298",
+            "nome": "bulufa",
+            "cidade": "1"
+        },
+        "linha2": {
+            "id": "2",
+            "cnpj": "580713",
+            "nome": "agilhao",
+            "cidade": "4"
+        },
+        "linha3": {
+            "id": "3",
+            "cnpj": "19358",
+            "nome": "ziolhyne",
+            "cidade": "3"
+        }
+    },
+    "tabCidades": {
+        "zaozofé": 1,
+        "desterro": 2,
+        "baliotha": 3,
+        "pinguçú": 4
+    }
+}
